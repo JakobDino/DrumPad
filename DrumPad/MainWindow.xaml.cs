@@ -37,6 +37,21 @@ namespace DrumPad
             return AppWindow.GetFromWindowId(myWndId);
         }
 
+        private void SwitchPresenter_CompOverlay(object sender, RoutedEventArgs e)
+        {
+            m_appWindow.SetPresenter(AppWindowPresenterKind.CompactOverlay); 
+        }
+
+        private void SwitchPresenter_OverLapped(object sender, RoutedEventArgs e)
+        {
+            m_appWindow.SetPresenter(AppWindowPresenterKind.Overlapped);
+        }
+
+        private void SwitchPresenter_Fullscreen(object sender, RoutedEventArgs e)
+        {
+            m_appWindow.SetPresenter(AppWindowPresenterKind.FullScreen);
+        }
+
         private void ToggleSwitch_Toggled(object sender, RoutedEventArgs e)
         {
             ToggleSwitch toggleSwitch = sender as ToggleSwitch;

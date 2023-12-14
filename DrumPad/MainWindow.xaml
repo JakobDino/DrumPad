@@ -22,11 +22,11 @@
             <DropDownButton Content="Display" Grid.Column="0" VerticalAlignment="Center" HorizontalAlignment="Left" Width="118">
                 <DropDownButton.Flyout>
                     <MenuFlyout Placement="Bottom">
-                        <MenuFlyoutItem Text="Default"/>
-                        <MenuFlyoutItem Text="Compact Overlay"/>
-                        <MenuFlyoutItem Text="Fullscreen"/>
+                        <MenuFlyoutItem Text="Default" Click="SwitchPresenter_OverLapped"/>
+                        <MenuFlyoutItem Text="Compact Overlay" Click="SwitchPresenter_CompOverlay"/>
+                        <MenuFlyoutItem Text="Fullscreen" Click="SwitchPresenter_Fullscreen"/>
                     </MenuFlyout>
-                </DropDownButton.Flyout>
+                </DropDownButton.Flyout>6
             </DropDownButton>
 
             <ToggleSwitch AutomationProperties.Name="simple ToggleSwitch" x:Name="dark_switch" Grid.Column="1" CornerRadius="3"
