@@ -26,7 +26,7 @@
                         <MenuFlyoutItem Text="Compact Overlay" Click="SwitchPresenter_CompOverlay"/>
                         <MenuFlyoutItem Text="Fullscreen" Click="SwitchPresenter_Fullscreen"/>
                     </MenuFlyout>
-                </DropDownButton.Flyout>6
+                </DropDownButton.Flyout>
             </DropDownButton>
 
             <ToggleSwitch AutomationProperties.Name="simple ToggleSwitch" x:Name="dark_switch" Grid.Column="1" CornerRadius="3"
