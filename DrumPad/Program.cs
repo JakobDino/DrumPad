@@ -14,9 +14,7 @@ namespace DrumPad
 {
     class Program
     {
-        class program
-        {
-            [STAThread]
+       [STAThread]
             static async Task<int> Main(string[] args)
             {
                 WinRT.ComWrappersSupport.InitializeComWrappers();
@@ -55,6 +53,5 @@ namespace DrumPad
             {
                 ExtendedActivationKind kind = args.Kind;
             }
-        }
     }
 }
